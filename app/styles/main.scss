@@ -1,0 +1,52 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+$brand-primary: #bc3437;
+$font-size-base: 16px;
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.full-width-header {
+  padding: 50px 0 200px;
+  background: $brand-primary url('../images/header-bg.png') repeat-x bottom center;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 12px;
+}
+
+#logo {
+  margin: 0 auto;
+}
+
+.section-info {
+  background: #f2f2f2;
+  border: none;
+  h2 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding: 2%;
+  width: 98%;
+  text-align: center !important;
+}
+
+.page-header.first {
+  margin-top: 0;
+}
+
+.fixed-sidebar {
+  width: 213px;
+  top: 20px;
+  .list-group a{
+    border: 0;
+    border-left: 5px solid $brand-primary;
+    color: $brand-primary;
+  }
+}
