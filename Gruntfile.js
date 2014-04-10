@@ -307,6 +307,20 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        buildcontrol: {
+          options: {
+            dir: 'dist',
+            commit: true,
+            push: true,
+            message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+          },
+          pages: {
+            options: {
+              remote: 'git@github.com:attacbe/attacwb.git',
+              branch: 'gh-pages'
+            }
+          }
         }
     });
 
@@ -349,3 +363,5 @@ module.exports = function (grunt) {
         'build'
     ]);
 };
+
+// grunt.loadNpmTasks('grunt-build-control');
