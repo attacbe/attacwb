@@ -364,17 +364,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('deploy', [
-      'clean:dist',
-      'useminPrepare',
-      'concurrent:dist',
-      'concat',
-      'cssmin',
-      'uglify',
-      'copy:dist',
-      'rev',
-      'usemin',
+      'build',
       'buildcontrol:pages'
     ]);
 };
-
-// grunt.loadNpmTasks('grunt-build-control');
