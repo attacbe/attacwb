@@ -7,7 +7,7 @@ $font-size-base: 16px;
 
 .full-width-header {
   padding: 50px 0 200px;
-  background: $brand-primary url('img/header-bg.png') repeat-x bottom center;
+  background: $brand-primary image-url('header-bg.png') repeat-x bottom center;
   color: #fff;
   text-align: center;
 }
