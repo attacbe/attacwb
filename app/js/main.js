@@ -1,5 +1,7 @@
+'use strict';
+
 $(document).ready(function () {
-  $("span.sendmail").each(function() {
+  $('span.sendmail').each(function() {
     //username+domain+tld[+display-text]
     var $span = $(this),
         data = $(this).text().split('+');

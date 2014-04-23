@@ -1,13 +1,13 @@
-$iconSpritePath: "../images/glyphicons-halflings.png";
-$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+// $iconSpritePath: "/img/glyphicons-halflings.png";
+// $iconWhiteSpritePath: "/img/glyphicons-halflings-white.png";
 $brand-primary: #bc3437;
 $font-size-base: 16px;
 
-@import 'sass-bootstrap/lib/bootstrap';
+@import 'sass-bootstrap/lib/bootstrap.scss';
 
 .full-width-header {
   padding: 50px 0 200px;
-  background: $brand-primary url('../images/header-bg.png') repeat-x bottom center;
+  background: $brand-primary image-url('header-bg.png') repeat-x bottom center;
   color: #fff;
   text-align: center;
 }
