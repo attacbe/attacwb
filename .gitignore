@@ -4,3 +4,4 @@ dist
 .sass-cache
 .jekyll
 _site/**/*
+.jekyll-cache
