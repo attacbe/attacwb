@@ -1,0 +1,58 @@
+@import "bootstrap/variables";
+
+body {
+  position: relative;
+}
+
+.full-width-header {
+  padding: 50px 0 200px;
+  background: $primary url("/assets/img/header-bg.png") repeat-x bottom center;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 12px;
+}
+
+#logo {
+  margin: 0 auto;
+}
+
+.section-info {
+  background: #f2f2f2;
+  border: none;
+  h2 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding: 2%;
+  width: 98%;
+  text-align: center !important;
+}
+
+.page-header.first {
+  margin-top: 0;
+}
+
+.fixed-sidebar {
+  width: 213px;
+  top: 20px;
+  &.sps--blw {
+    position: fixed;
+  }
+  .list-group a {
+    border: 0;
+    border-left: 5px solid $primary;
+    color: $primary;
+  }
+}
+
+.stretch {
+  width: 100%;
+}

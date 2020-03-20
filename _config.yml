@@ -4,23 +4,29 @@
 # 3. config.yml
 
 name: attacwb
-description: Site Officiel d'Attac Wallonie-Bruxelles
+title: Site Officiel d'Attac Wallonie-Bruxelles
 author:
   name: Boris Rorsvort
   email: bxl2.webmaster@attac.be
 
-# Grunt handles images and assets.
-exclude: ['img', 'css', 'js', 'fonts',
-          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'bower_components']
+# Site settings
+email: "boris@rorsvort.com"
+baseurl: ""
+paginate: 5
+paginate_path: "/blog/page-:num"
+google_analytics: UA-2826331-18
 
-include: ['.htaccess']
+# SEO settings
+url: https://wb.attac.be
 
-# _config.build.yml sets future and show_drafts to false on `grunt build`
-future: true
-show_drafts: true
+# Build settings
+exclude: ["Gemfile", "Gemfile.lock"]
+markdown: kramdown
 
-# Markdown library
-markdown: redcarpet
-#   extensions: ['fenced_code_blocks', 'smart']
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
 
-highlighter: false
+# Gems
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-autoprefixer]
